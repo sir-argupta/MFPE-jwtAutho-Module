@@ -1,0 +1,10 @@
+version: 1.0
+Resources:
+  - TargetService:
+      Type: AWS::ECS::Service
+      Properties:
+        TaskDefinition: "arn:aws:ecs:us-east-1:942605225521:task-definition/pod-3-return-order-jwtAutho-process-td:1"
+        LoadBalancerInfo:
+          ContainerName: "mfpe-authication-module"
+          ContainerPort: "8084"
+        PlatformVersion: "LATEST"
