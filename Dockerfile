@@ -1,5 +1,5 @@
 FROM openjdk:15-oracle
 
-ADD target/authorizationService-0.0.1-SNAPSHOT.jar Auth-app.jar
+ADD target/Process.jar Process.jar
 EXPOSE 8084
-ENTRYPOINT ["java","-jar","/Auth-app.jar"]
+ENTRYPOINT ["java","-jar","/Process.jar"]
